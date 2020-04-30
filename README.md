@@ -1,8 +1,9 @@
-# springer-quarantine-books
+# Springer Quarantine Books
 
 This Docker image downloads all the
 [473 books](https://link.springer.com/search?facet-content-type=Book&package=mat-covid19_textbooks)
-that [Springer](https://www.springer.com/gb) have kindly made available.
+that [Springer](https://www.springer.com/gb) have kindly made available during
+the COVID19 Quarantine.
 
 ## Notes
 
@@ -19,7 +20,7 @@ that [Springer](https://www.springer.com/gb) have kindly made available.
 docker pull oreandawe/springer-quarantine-books:latest
 
 # Run the container.
-# Change "`/path/to/your/downloads/location`" to a real directory.
+# Change "/path/to/your/downloads/location" to a real directory.
 docker run --rm -ti \
     -v /path/to/your/downloads/location:/downloads \
     oreandawe/springer-quarantine-books:latest
